@@ -62,7 +62,7 @@ const Aside = ({ items }: Props) => {
           ))}
           <a
             onClick={() => setOpen(!open)}
-            className="flex items-center p-2 mb-2 rounded bg-red-500 hover:bg-red-800 text-white font-bold"
+            className="flex items-center p-2 mb-2 rounded bg-red-500 hover:bg-red-800 text-white font-bold cursor-pointer"
           >
             <svg
               className="w-6 h-6 mr-2"

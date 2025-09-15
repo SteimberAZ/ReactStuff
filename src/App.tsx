@@ -1,5 +1,6 @@
 import Card, { CardBody } from "./components/Card";
 import Titulo from "./components/Titulo";
+import TextoFor from "./components/TextoFor";
 import List from "./components/List";
 import Contar from "./components/Contar";
 import Aside from "./components/Aside";
@@ -8,6 +9,7 @@ import homeIcon from "./assets/home.png";
 import settingsIcon from "./assets/settings.png";
 
 function App() {
+  const frase = `Hola me llamo randy esta es mi pagina`;
   const list = ["Doraemon", "Nobita", "Sisuka", "Gigante", "Zuneo"];
   const itemsAside = [
     { name: "Inicio", icon: homeIcon, link: "/" },
@@ -20,7 +22,13 @@ function App() {
   return (
     <div className=" flex  justify-center items-center h-screen text-center bg-white">
       <Aside items={itemsAside}></Aside>
+      <div className="w-[400px] h-[auto] bg-white border flex border-gray-300 rounded p-4 overflow-hidden m-5">
+        <TextoFor texto={frase.split("")} />
+      </div>
+     
+
       <Card>
+        
         <Titulo></Titulo>
         <CardBody
           title={"Hola Mundo"}
