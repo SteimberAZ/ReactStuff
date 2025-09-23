@@ -8,7 +8,7 @@ function Card(props: Props) {
   return (
     <a
       href="#"
-      className="flex flex-col justify-center items-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-white dark:border-gray-200 dark:hover:bg-gray-100"
+      className="flex flex-col justify-center items-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm  dark:bg-black dark:border-gray-200  "
       style={{
         width: "auto",
       }}
